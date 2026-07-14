@@ -11,8 +11,8 @@
   <p class="underline text-xs text-gray-800 font-semibold bg-[#f4f4f4] text-center py-3 tracking-wide shadow md:text-base">
      Earn up to $1,000 per month sharing your car on Turo
   </p>
-  <div class="w-full h-2000 relative pl-6 pr-5 mx-auto lg:max-w-295">
-    <header class="flex justify-between items-center w-full py-4 mb-4 h-17 bg-white sticky top-0">
+  <div class="w-full relative pl-6 pr-5 mx-auto lg:max-w-295">
+    <header class="flex items-center w-screen pr-14 py-4 mb-4 h-17  z-10 bg-white sticky top-0 lg:px-0 lg:w-full">
       <div class="flex-1">
         <img src="./images/turo-logo1.png"
          class="w-16.5 h-6 md:w-22 md:h-8.5"
@@ -20,8 +20,12 @@
       </div>
       <div class="flex-1 justify-end flex gap-x-3.5 mr-4">
         <button class="w-34 h-8 border border-gray-300 rounded-lg text-xs text-gray-700 font-bold">Why choose Turo</button>
-        <button class="w-25 h-8 border border-gray-300 rounded-lg text-xs text-gray-700 font-bold">Ask Turo</button>
-        <div class="flex items-center gap-2.5 text-[22px] text-gray-600">
+        <div class="w-25 h-8 flex items-center gap-2 border border-gray-300 rounded-lg
+         text-xs text-gray-700 font-bold pl-2 hover:border-y-3 hover:border-x-2 hover:border-fuchsia-700">
+          <img class="size-4.25" src="images/AI-Icon-48.png" alt="">
+          <button>Ask Turo</button>          
+        </div>
+        <div class="flex items-center gap-2.5 text-[22px] text-gray-600 hover:bg-[#f4f4f4]">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-regular fa-circle-user"></i>
         </div>
@@ -32,7 +36,7 @@
       <h1 class="text-white text-[38px] font-bold">Rental reinvented</h1>
       <p class="text-white text-center font-semibold">Rent the exact car you want, exactly where you need it, for days, weeks, or months</p> <br>
       <div class="flex justify-between items-center w-100 h-14 bg-white pb px-2
-       border-2 border-gray-200 rounded-xl sticky top-2 lg:w-212">
+       border-2 border-gray-200 rounded-xl cursor-pointer lg:w-225">
         <!-- MOBILE SEARCH-BAR -->
         <p class="lg:hidden text-md text-gray-600 font-normal px-2">Search anywhere</p>
         <!-- DESKTOP SEARCH-BAR -->
@@ -63,9 +67,9 @@
         </button>
       </div>
     </div>
-    <nav class=" bg-white overflow-x-auto px-6ss sticky top-13">
-      <div class="w-150 flex justify-center gap-1.5  mx-auto my-4 text-base text-gray-900 
-        font-semibold">
+    <nav class="w-full bg-white overflow-x-auto px-9 sticky top-13 z-11 xl:w-full">
+      <div class="w-150 flex justify-center gap-1 mx-auto my-4 text-base text-gray-900 
+        font-semibold cursor-pointer">
         <div class="flex justify-center items-center gap-2.5 px-4 py-2 rounded-xl bg-black text-white">
           <i class="fa-solid fa-car text-sm"></i>
           <p>All</p>
@@ -92,15 +96,16 @@
         </div>
       </div>
     </nav>
-    <section class="w-full overflows-hidden my-2 lg:w-full">
-      <h1 class="text-[16px] tracking-wide text-gray-900 font-bold my-2 lg:text-[21px]">Inspired by you recent searches</h1>
+    <!-- SECTION #1 -->
+    <section class="w-full my-2 cursor-pointer lg:w-full">
+      <h1 class="text-[16px] text-black font-bold my-2 cursor-default lg:text-[22px]">Inspired by you recent searches</h1>
       <div class="flex gap-4 lg:flex-wrap">
         <div class="flex shrink-0 justify-start gap-5 w-88 h-26 p-3 lg:basis-[32%] lg:max-w-92 bg-[#f4f4f4] rounded-xl">
           <div><img class="w-full h-full rounded-lg" src="images/Recent-SRCH/KiaSedona.avif" alt=""></div>
           <div class="flex flex-col ">
-            <h3 class="text-[16px] text-black font-bold">Kia Sedona</h3>
-            <p class="text-xs font-medium my-1">2016 - 4.97 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (83)</p>
-            <a class="underline text-[15px] font-bold text-gray-700 mt-2" href="">View details</a>
+            <h3 class="text-[16px] text-black font-bold">Porsche Cayenne</h3>
+            <p class="text-xs font-medium my-1">2022 - 4.97 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (4)</p>
+            <a class="underline text-[15px] font-bold text-gray-700 mt-2" href="Card-Item.html" target="_blank">View details</a>
           </div>
         </div>
         <div class="flex shrink-0 justify-start gap-5 w-88 h-26 p-3 lg:basis-[32%] lg:max-w-92 bg-[#f4f4f4] rounded-xl">
@@ -145,54 +150,233 @@
         </div>
       </div>
     </section>
-    <section class="w-full overflow-hidden my-3">
-      <h1 class="text-[17px] tracking-wide text-gray-900 font-bold lg:text-[21px]">
-        SUV rental in Newark
+    <!-- SECTION #2 -->
+    <section class="my-3 cursor-pointer">
+      <h1 class="text-[16px] text-black font-bold cursor-default lg:text-[22px]">
+        SUV rental in New York
       </h1>
-      <p class="text-sm text-gray-700 font-normal tracking-wider mb-3">Average daily prices for a 3-day trip</p>
-      <div class="flex flex-nowrap gap-3 w-full">
-        <div class="flex flex-col min-w-54 min-h-35">
-          <div class="rounded-xl">
+      <p class="text-sm text-gray-700 font-normal mb-3">Average daily prices for a 3-day trip</p>
+      <div class="w-full grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
+        <div class="flex flex-col xl:w-70">
+          <div class="">
             <img class="rounded-xl" src="images/Mercedes.avif" alt="">
           </div>
-          <h3 class="text-[16px] text-black tracking-wider font-bold pt-1 mx-2">Mercedes-Benz GLE</h3>
-          <p class="text-[17px] text-gray-800 pb-3 mx-3">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (3)</p>
-          <p class="text-[17px] text-gray-700 font-bold mx-3">$166<span class="text-sm font-normal text-gray-800">/day</span></p>
+          <h3 class="text-[16px] text-black font-bold pt-1 mx-2 lg:text-[22px]">Mercedes-Benz GLE</h3>
+          <p class="text-[13px] text-black pb-3 mx-3 lg:text-lg">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (3)</p>
+          <p class="text-[17px] text-gray-950 font-bold mx-3">$166<span class="text-sm font-normal text-gray-800">/day</span></p>
           <p class="text-sm text-gray-700 mx-3">$498 total</sp>
         </div>
-        <div class="flex flex-col min-w-54 min-h-35">
-          <div class="rounded-xl">
-            <img class="rounded-xl" src="images/Genesis.avif" alt="">
+        <div class="flex flex-col">
+          <div class="">
+            <img class="rounded-xl" src="images/JeepWrangler.avif" alt="">
           </div>
-          <h3 class="text-[16px] text-black tracking-wider font-bold pt-1 mx-2">Genesis GV70</h3>
-          <p class="text-[17px] text-gray-800 pb-3 mx-3">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (7)</p>
-          <p class="text-[17px] text-gray-700 font-bold mx-3">$199<span class="text-sm font-normal text-gray-800">/day</span></p>
+          <h3 class="text-[16px] text-black font-bold pt-1 mx-2 lg:text-[22px]">Jeep Wrangler</h3>
+          <p class="text-[13px] text-black pb-3 mx-3 lg:text-lg">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (7)</p>
+          <p class="text-[17px] text-gray-950 font-bold mx-3">$199<span class="text-sm font-normal text-gray-800">/day</span></p>
           <p class="text-sm text-gray-700 mx-3">$296 total</sp>
         </div>
-        <div class="flex flex-col min-w-54 min-h-35">
-          <div class="rounded-xl">
+        <div class="hidden md:flex flex-col">
+          <div class="">
             <img class="rounded-xl" src="images/Genesis.avif" alt="">
           </div>
-          <h3 class="text-[16px] text-black tracking-wider font-bold pt-1 mx-2">Mercedes-Benz</h3>
-          <p class="text-[17px] text-gray-800 pb-3 mx-3">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (2)</p>
-          <p class="text-[17px] text-gray-700 font-bold mx-3">$298<span class="text-sm font-normal text-gray-800">/day</span></p>
+          <h3 class="text-[16px] text-black font-bold pt-1 mx-2 lg:text-[22px]">Mercedes-Benz</h3>
+          <p class="text-[13px] text-black pb-3 mx-3 lg:text-lg">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (2)</p>
+          <p class="text-[17px] text-gray-950 font-bold mx-3">$298<span class="text-sm font-normal text-gray-800">/day</span></p>
+          <p class="text-sm text-gray-700 mx-3">$895 total</p>
+        </div>
+        <div class="hidden xl:flex flex-col">
+          <div class="">
+            <img class="rounded-xl" src="images/Buick.avif" alt="">
+          </div>
+          <h3 class="text-[16px] text-black font-bold pt-1 mx-2 lg:text-[22px]">Buick</h3>
+          <p class="text-[13px] text-black pb-3 mx-3 lg:text-lg">2026 - 5.0 <i class="fa-solid fa-star text-blue-700 text-sm"></i> (2)</p>
+          <p class="text-[17px] text-gray-950 font-bold mx-3">$298<span class="text-sm font-normal text-gray-800">/day</span></p>
           <p class="text-sm text-gray-700 mx-3">$895 total</sp>
         </div>
       </div>
     </section>
+    <!-- SECTION #3 -->
+    <section class="w-screen mt-12 z-9 lg:w-full">
+      <div class="w-full lg:flex lg:items-center lg:gap-5">
+        <div class="w-[90%] shrink-0 mr-1 leading-10 lg:leading-normal lg:w-82">
+          <div class="size-13 mb-2 lg:size-17">
+            <img class="object-cover"
+            src="images/Ball.png" alt="">
+          </div>
+          <h2 class="text-[28px] text-black font-bold lg:my-4 leading-8">The world's biggest soccer event is here</h2>
+          <p class="text-[15px] text-[#37373b] font-medium leading-6 tracking-wide my-6 lg:mb-11">Book now to secure your ride and roll in ready to cheer your team on to the finals.</p>
+          <a class="hidden lg:block cursor-pointer"
+           href=""><button class="w-38 h-12 bg-[#593cfb] rounded-[10px]
+           text-white text-center text-[15px] font-bold tracking-wide">Explore all cities</button>
+          </a>
+        </div>
+        <!-- CITIES -->
+        <div class="flex gap-4 cursor-pointer lg:overflow-x-auto lg:pb-2">
+          <!-- Los Angeles -->
+          <div class="relative aspect-2/3 w-55 h-82.5 rounded-xl text-white overflow-clip lg:w-68 lg:h-102">
+            <img class="w-full h-full object-cover" src="images/Cities/LosAngeles.webp" alt="">
+            <div class="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent"></div>
+            <p class="absolute bottom-9.5 left-4 text-[21px] font-bold">Los Angeles</p>
+            <span class="absolute bottom-4 left-4 text-[16.5px] font-medium tracking-wide">June 12 - July 10</span>
+          </div>
+          <!-- Vancouver -->
+          <div class="relative aspect-2/3 w-55 h-82.5 rounded-xl text-white overflow-clip lg:w-68 lg:h-102">
+            <img class="w-full h-full object-cover" src="images/Cities/Vancouver.webp" alt="">
+            <div class="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent"></div>
+            <p class="absolute bottom-9.5 left-4 text-[21px] font-bold">Vancouver</p>
+            <span class="absolute bottom-4 left-4 text-[16.5px] font-medium tracking-wide">June 13 - July 7</span>
+          </div>
+          <!-- Boston -->
+          <div class="relative aspect-2/3 w-55 h-82.5 rounded-xl text-white overflow-clip lg:w-68 lg:h-102">
+            <img class="w-full h-full object-cover" src="images/Cities/Boston.webp" alt="">
+            <div class="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent"></div>
+            <p class="absolute bottom-9.5 left-4 text-[21px] font-bold">Boston</p>
+            <span class="absolute bottom-4 left-4 text-[16.5px] font-medium tracking-wide">June 13 - July 9</span>
+          </div>
+          <!-- New York -->
+          <div class="relative aspect-2/3 w-55 h-82.5 rounded-xl text-white overflow-clip lg:w-68 lg:h-102">
+            <img class="w-full h-full object-cover" src="images/Cities/NewYork.webp" alt="">
+            <div class="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent"></div>
+            <p class="absolute bottom-9.5 left-4 text-[21px] font-bold">New York</p>
+            <span class="absolute bottom-4 left-4 text-[16.5px] font-medium tracking-wide">June 13 - July 19</span>
+          </div>
+          <!-- Dallas -->
+          <div class="relative aspect-2/3 w-55 h-82.5 rounded-xl text-white overflow-clip lg:w-68 lg:h-102">
+            <img class="w-full h-full object-cover" src="images/Cities/Dallas.webp" alt="">
+            <div class="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent"></div>
+            <p class="absolute bottom-9.5 left-4 text-[21px] font-bold">Dallas</p>
+            <span class="absolute bottom-4 left-4 text-[16.5px] font-medium tracking-wide">June 14 - July 14</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <!-- FOOTER -->
+  <footer class="w-screen bg-[#f4f4f4] mt-15 pt-6 pl-8">
+    <section class="w-screen sm:mx-auto sm:w-157 lg:w-237 xl:w-260">
+      <!-- FIRS PART  -->
+      <div class="">
+        <div class="flex items-center px-4 pb-2 overflow-x-auto lg:px-0">
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#222223] uppercase p-4 tracking-wide border-b-3">vehicle types</button>
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#59595b] uppercase p-4 tracking-wide">Makes & Models</button>
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#59595b] uppercase p-4 tracking-wide">US Cities</button>
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#59595b] uppercase p-4 tracking-wide">Airports</button>
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#59595b] uppercase p-4 tracking-wide">International Cities</button>
+          <button class="text-xs shrink-0 font-bold text-[#121214] sm:text-[#59595b] uppercase p-4 tracking-wide">States</button>
+        </div>
+        <div class="grid grid-flow-row grid-cols-2 grid-rows-10 gap-4 my-5 px-4 lg:gap-x-0 md:grid-cols-4 
+           md:grid-rows-5 lg:grid-cols-5 lg:grid-rows-4 lg:w-215 lg:px-0">
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Car rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Minivan rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Luxury car rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Truck rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Van rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Cargo van rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Box truck rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Classic car rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Sport car rental</a>
+          <a class="text-xs text-black font-semibold tracki ng-wide hover:underline" href="">SUV rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Convertible car rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Electric car rental</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Luxury car rent Atlanta</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Truck rental Atlanta</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Van rantal Chicago</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Luxury rental Charlotte</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Truck rental Austin</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Van rental Dallas</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Luxury car rent Chicago</a>
+          <a class="text-xs text-black font-semibold tracking-wide hover:underline" href="">Truck rental Chicago</a>
+        </div>
+        <button class="text-[16px] text-[#593cfb] font-bold mt-2 pl-4 lg:p-0">
+          Show more
+        </button>
+      </div>
+      <!-- SECOND PART (ABOUT US) -->
+      <div class="flex flex-col gap-13 mt-23 lg:flex-row lg:gap-9 xl:gap-0">
+        <div class="flex flex-col gap-6 lg:mt-2 lg:order-2 lg:w-[28%] xl:w-[35%]">
+          <div class="flex gap-5 text-xl pl-0.5">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <p class="text-[11px] text-[#121214] font-semibold tracking-wider uppercase border border-[#121214] rounded-sm px-0.5">blog</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="w-28 h-10 rounded-md" src="images/Cities/AppStoreBadge.png" alt="">
+            <img class="w-35 h-10 rounded-md" src="images/Cities/GooglePlayBadge.png" alt="">
+          </div>
+          <div class="flex items-center gap-3 mt-4 pl-2">
+            <i class="fa-solid fa-angle-up text-[11px] text-[#121214] pt-1"></i>
+            <img class="size-6 rounded-[13px]" src="images/US.jpg" alt="">
+            <span class="text-[13px] font-semibold">English</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 lg:flex-row lg:gap-20 xl:w-189">
+          <div class="select-none flex flex-col border-t border-black/10 gap-3 lg:border-0 lg:pr-5">
+            <div class="flex justify-between items-center my-3 lg:my-0">
+              <h3 class="text[17px] text-black font-bold">Turo</h3>
+              <i class="fa-solid fa-angle-down text-xs font-light text-[#121214]  mr-2 lg:invisible"></i>
+            </div>
+            <ul class="hidden text-xs text-[#121214] font-semibold leading-6.5 lg:block">
+              <li>About</li>
+              <li>Team</li>
+              <li>Policies</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>OpenRoad</li>
+            </ul>
+          </div>
+          <div class="flex flex-col border-t border-black/10 gap-3 lg:border-0">
+            <div class="flex justify-between items-center my-3 lg:my-0">
+              <h3 class="text[17px] text-black font-bold">Locations</h3>
+              <i class="fa-solid fa-angle-down text-xs font-light text-[#121214]  mr-2 lg:invisible"></i>
+            </div>
+            <ul class="hidden text-xs text-[#121214] font-semibold leading-6.5 lg:block">
+              <li>USA (EN)</li>
+              <li>Australia (EN)</li>
+              <li>Canada (EN)</li>
+              <li>Canada (FR)</li>
+              <li>France (FR)</li>
+              <li>UK (EN)</li>
+            </ul>
+          </div>
+          <div class="flex flex-col border-t border-black/10 gap-3 lg:border-0">
+            <div class="flex justify-between items-center my-3 lg:my-0">
+              <h3 class="text[16px] text-black font-bold">Explore</h3>
+              <i class="fa-solid fa-angle-down text-xs font-light text-[#121214]  mr-2 lg:invisible"></i>
+            </div>
+            <ul class="hidden text-xs text-[#121214] font-semibold leading-6.5 lg:block">
+              <li>Why choose Turo</li>
+              <li>Weddings</li>
+              <li>Pitch a trip</li>
+              <li>Trust & safety</li>
+              <li>Get help</li>
+            </ul>
+          </div>
+          <div class="flex flex-col border-t border-black/10 gap-3 lg:border-0">
+            <div class="flex justify-between items-center my-3 lg:my-0">
+              <h3 class="text-[16px] text-black font-bold">Hosting</h3>
+              <i class="fa-solid fa-angle-down text-xs font-light text-[#121214]  mr-2 lg:invisible"></i>
+            </div>
+            <ul class="hidden text-xs text-[#121214] font-semibold leading-6.5 lg:block">
+              <li>List your car</li>
+              <li>Carculator</li>
+              <li>All-Star Hosts</li>
+              <li>Host Hub</li>
+              <li>Insurance & protection</li>
+            </ul>  
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center text-xs font-semibold text-black/90 pb-15 mt-12 gap-7">
+        <p>©2026 Turo, Inc</p>
+        <a class="hover:underline" href="">Terms</a>
+        <a class="hover:underline" href="">Privacy</a>
+        <a class="hover:underline" href="">Cookie preferences</a>
+        <a class="hover:underline" href="">Do not sell or share my personal information</a>
+      </div>
+    </section>
+  </footer>
 </body>
-<!-- <svg class="seo-pages-m90ygk" data-testid="IconHamburgerMenuOutline" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 4.25a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5zM20 11.25a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5zM20 18.25a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5z" fill="#121214">
-  </path>
-</svg>
-
-<svg class="seo-pages-m90ygk" data-testid="IconAvatar2Outline" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-  <path clip-rule="evenodd" d="M12 6.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" fill="#121214" fill-rule="evenodd"></path><path clip-rule="evenodd" d="M12 1.25c5.937 0 10.75 4.813 10.75 10.75S17.937 22.75 12 22.75 1.25 17.937 1.25 12 6.063 1.25 12 1.25m-1.598 15a4.25 4.25 0 0 0-3.69 2.142l-.48.839A9.2 9.2 0 0 0 12 21.25a9.2 9.2 0 0 0 5.768-2.019l-.48-.84a4.25 4.25 0 0 0-3.69-2.141zM12 2.75a9.25 9.25 0 0 0-6.89 15.42l.3-.523a5.75 5.75 0 0 1 4.992-2.897h3.196a5.75 5.75 0 0 1 4.993 2.897l.3.524A9.25 9.25 0 0 0 12 2.75" fill="#121214" fill-rule="evenodd">
-  </path> -->
-</svg>
-
-
-
   <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </html>
