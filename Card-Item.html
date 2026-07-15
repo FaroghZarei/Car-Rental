@@ -28,7 +28,7 @@
         </div>
     </header>
     <main class="w-screen relative lg:pr-8 lg:pl-9 lg:mx-auto lg:w-252 lg:mt-8">
-        <div class="w-full flex items-end justify-center fixed bottom-0 left-0 right-0 z-1000 py-3 pl-1
+        <section class="w-full flex items-end justify-center fixed bottom-0 left-0 right-0 z-1000 py-3 pl-1
           bg-linear-to-t from-white via-white/95 to-white/80 cursor-default lg:hidden">
             <div class="w-[98%] py-5 px-4 mt-5 flex justify-between bg-white rounded-xl border border-[#d2d2d4]
             border-b-0 shadow-xl">
@@ -42,7 +42,7 @@
                 <p class="w-30 h-11.5 text-center text-[15px] font-bold bg-[#e7e7e8] rounded-lg 
                 pt-3 text-gray-400">Continue</p>
             </div>
-        </div>
+        </section>
         <section class="w-full">
             <div class="flex gap-2 relative lg:rounded-lg overflow-hidden">
                 <div class="w-screen max-h-100 lg:w-3/4"><img class="aspect-video w-full! h-full! object-cover" src="images/PorscheCayenne.jpg" alt=""></div>
@@ -74,7 +74,7 @@
                     <p class="flex items-center px-3  border border-[#504d4d] text-[#121214] text-xs font-medium rounded-xl">
                         <img class="mr-3 size-8" src="images/Auto-Transmission1.jpg"> Automatic transmission</p>    
                 </div>
-                <div class="hidden w-full mt-2 text-[#121214] bg-[#dcf7ea] rounded-xl
+                <div class="hidden w-full mt-4 text-[#121214] bg-[#dcf7ea] rounded-xl
                  pl-3 py-3 lg:block">
                     <h3 class="text-sm font-bold py-0.5">Great deal!</h3>
                     <p class="text-xs font-medium">Priced lower than similar options for your trip.</p>
@@ -191,7 +191,7 @@
             </div>
         </section>
         <section class="flex flex-col gap-5 mx-auto max-w-3xl border-t-2 border-[#e7e7f9] py-4 pl-4.5 
-        lg:w-130 lg:mx-0 lg:my-7 lg:pl-0">
+        lg:py-8 lg:w-130 lg:mx-0 lg:my-7 lg:pl-0">
             <h3 class="text-[21px] text-black font-bold">Hosted by</h3>
             <div class="flex gap-5 items-center">
                 <div class="flex flex-col relative">
@@ -206,20 +206,21 @@
                     <p class="text-[17px]">545 trips • Joined Jul 2017</p>
                 </div>
             </div>
-            <div class="flex gap-7 border-t-2 border-[#e7e7f9] pt-8">
+            <div class="flex gap-7 border-t-2 border-[#e7e7f9] pt-8 lg:gap-10 lg:pb-3">
                 <div>
-                    <img class="size-16 rounded-full" src="images/AllStar.png" alt="">
+                    <img class="w-19 h-16 rounded-full" src="images/AllStar.png" alt="">
                 </div>
-                <div class="flex flex-col justify-center">
-                    <p class="text-[17px] font-bold">All-Star Host</p>
-                    <p class="text-[13px] text-gray-600 font-medium">All-Star Hosts like Abraham are the top-rated and most experienced hosts on Turo.</p>
+                <div class="flex flex-col gap-0">
+                    <p class="text-[16px] font-bold">All-Star Host</p>
+                    <p class="text-xs text-gray-900 tracking-wide ">All-Star Hosts like Abraham are the top-rated and most experienced hosts on Turo.</p>
                 </div>
             </div>
-            <div class="flex flex-col gap-4 border-t-2 border-[#e7e7f9] py-4">
+            <div class="flex flex-col gap-4 border-t-2 border-[#e7e7f9] py-4 lg:py-7">
                 <h3 class="text-[22px] font-bold text-black tracking-wide">Deluxe class</h3>
                 <p class="text-[16px] text-black">This exclusive car has additional safety checks for guests under 30.</p>
             </div>
-            <div class="max-h-102 lg:h-71 overflow-hidden relative flex flex-col gap-3 border-t-2 border-[#e7e7f9] py-4 cursor-default">
+            <div class="max-h-102 lg:h-71 overflow-hidden relative flex flex-col gap-3 border-t-2 border-[#e7e7f9]
+             py-4 lg:pt-7 cursor-default">
                 <h3 class="text-[22px] font-bold text-gray-950">Vehicle features</h3>
                 <div class="w-full grid grid-flow-col grid-cols-1 grid-rows-4 lg:grid-flow-row 
                 lg:grid-cols-2 lg:grid-rows-2">
@@ -269,7 +270,7 @@
                      pt-1.5 cursor-pointer lg:w-1/4 lg:h-8 lg:text-xs">See all 19 features</p>
                 </div>
             </div>
-            <div class="w-full flex flex-col gap-3 border-t-2 border-[#e7e7f9] py-4 cursor-default">
+            <div class="w-full flex flex-col gap-3 border-t-2 border-[#e7e7f9] py-4 cursor-default lg:pb-2">
                 <h1 class="text-xl font-bold text-black">Included in the price</h1>
                 <h4 class="font-bold text-gray-950 tracking-wider">Convenience</h4>
                 <div class="flex gap-6 items-center pl-2">
@@ -291,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex flex-col gap-3 border-t-2 border-[#e7e7f9] py-4 cursor-default">
+            <div class="w-full flex flex-col gap-3 cursor-default">
                 <h4 class="font-bold text-black">Peace of mind</h4>
                 <div class="flex gap-6 items-center pl-2 my-1">
                     <i class="text-2xl fa-solid fa-car-on"></i>
@@ -305,6 +306,52 @@
                     <i class="fa-solid fa-headset"></i>
                     <p class="text-[17px] text-black tracking-wide">24/7 customer support</p>
                 </div>
+            </div>
+            <div class="w-full flex flex-col gap-4 border-t-2 border-[#e7e7f9] py-4 cursor-default lg:py-8">
+                <h1 class="text-xl font-bold text-black">Ratings and Reviews</h1>
+                <div class="flex items-center gap-1.5">
+                    <h1 class="text-xl font-bold lg:text-4xl">4.0</h1>
+                    <i class="text-2xl text-[#593cfb] fa-solid fa-star"></i>
+                    <p class="text-black/90 text-[16px]">(4 ratings)</p>
+                </div>
+                <div class="w-full flex flex-col gap-2 lg:mt-3">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="w-3/12 text-base text-gray-950 tracking-wide lg:mr-3">Cleanliness</p>
+                        <div class="w-11/12 h-2 bg-gray-300 rounded-lg mt-1 lg:w-8/12">
+                            <div class="w-4/5 h-full bg-[#593cfb] rounded-lg transition duration-1000"></div>
+                        </div>
+                        <span class="w-1/12 ml-8 text-base">4.0</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                        <p class="w-3/12 text-base text-gray-950 tracking-wide lg:mr-3">Maintenance</p>
+                        <div class="w-11/12 h-2 bg-gray-300 rounded-lg mt-1 lg:w-8/12">
+                            <div class="w-full h-full bg-[#593cfb] rounded-lg transition duration-1000"></div>
+                        </div>
+                        <span class="w-1/12 ml-8 text-base">5.0</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                        <p class="w-3/12 text-base text-gray-950 tracking-wide lg:mr-3">Communication</p>
+                        <div class="w-11/12 h-2 bg-gray-300 rounded-lg mt-1 lg:w-8/12">
+                            <div class="w-[90%] h-full bg-[#593cfb] rounded-lg transition duration-1000"></div>
+                        </div>
+                        <span class="w-1/12 ml-8 text-base">4.5</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                        <p class="w-3/12 text-base text-gray-950 tracking-wide lg:mr-3">Convenience</p>
+                        <div class="w-11/12 h-2 bg-gray-300 rounded-lg mt-1 lg:w-8/12">
+                            <div class="w-[70%] h-full bg-[#593cfb] rounded-lg transition duration-1000"></div>
+                        </div>
+                        <span class="w-1/12 ml-8 text-base">3.5</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                        <p class="w-3/12 text-base text-gray-950 tracking-wide lg:mr-3">Accuracy</p>
+                        <div class="w-11/12 h-2 bg-gray-300 rounded-lg mt-1 lg:w-8/12">
+                            <div class="w-3/5 h-full bg-[#593cfb] rounded-lg transition duration-1000"></div>
+                        </div>
+                        <span class="w-1/12 ml-8 text-base">3.0</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600 font-medium leading-0">Based on 4 guest ratings</p>
             </div>
         </section>        
     </main>
