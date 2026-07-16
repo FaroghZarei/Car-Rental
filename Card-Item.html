@@ -10,7 +10,7 @@
 <body class="overflow-x-hidden">
     <header class="flex justify-between items-center w-screen h-16 z-1000 sticky top-0 border-b border-gray-300 bg-white px-4 md:mt-1">
         <div class="flex gap-8">
-            <img class="w-16.5 h-6 md:w-22 md:h-8.5" 
+            <img class="w-16.5 h-6 md:w-22 md:h-8" 
             src="images/turo-logo1.png" alt="">
             <div class="flex items-center gap-1.5 w-70 border-b border-gray-500 leading-0">
                 <i class="text-[15px] text-gray-400 font-light pt-1 fa-solid fa-search"></i>
@@ -23,56 +23,59 @@
                 <img class="size-4.25 ml-2" src="images/AI-Icon-48.png" alt="">
                 <button>Ask Turo</button>          
             </div>
-            <div class="peer flex gap-2 hover:bg-[#f4f4f4] ">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-regular fa-circle-user"></i>
-            </div>
+            <button class="peer hover:bg-[#f4f4f4]">
+                <div class="flex items-center gap-2.5 text-[22px] text-gray-600">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+            </button>
             <!-- OPEN MENU -->
-            <div class="hidden peer-hover:flex absolute z-1000 bg-gray-50 w-85 rounded-xl 
-            top-16 right-8 py-4 px-6 flex-col gap-2 border border-gray-300 border-b shadow-xl">
-                <div class="w-full flex flex-col gap-5 border-b border-gray-500 pb-4">
-                    <p class="text-base text-gray-700 hover:bg-gray-200">Log in</p>
-                    <p class="text-base text-gray-700 hover:bg-gray-200">Sign in</p>
-                    <div class="flex items-center gap-2">
+            <div class="hidden peer-focus:flex flex-col gap-4 absolute z-1000 bg-gray-50 w-screen h-screen 
+            top-16 right-0 md:rounded-xl md:w-90 md:h-auto md:right-8 lg:right-2 py-2 pr-1 pl-2 md:pr-3
+            md:gap-2 md:border lg:border-t-0 border-gray-300 border-b shadow-xl cursor-pointer">
+                <div class="flex flex-col border-b-2 border-gray-200 pb-6 md:pb-2 gap-4 md:gap-0">
+                    <p class="text-base text-gray-700 p-2 rounded-lg hover:bg-gray-200">Log in</p>
+                    <p class="text-base text-gray-700 p-2 rounded-lg hover:bg-gray-200">Sign in</p>
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa-solid fa-car mr-1"></i>
                         <p class="text-base text-gray-700 ">Become a host</p>
                     </div>
                 </div>
-                <div class="w-full flex flex-col gap-5">
-                    <div class="flex items-center gap-2">
-                        <i class="text-xl fa-solid fa-car mr-1"></i>
-                        <p class="text-base text-gray-700 ">Why choose Turo</p>
+                <div class="w-full flex flex-col gap-3.5 md:gap-0">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
+                        <i class="text-xl fa-solid fa-key mr-1"></i>
+                        <p class="text-base text-gray-700">Why choose Turo</p>
                     </div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa fa-gift mr-1"></i>
-                        <p class="text-base text-gray-700 ">Gift cards</p>
+                        <p class="text-base text-gray-700">Gift cards</p>
                     </div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa-solid fa-headphones mr-1"></i>
-                        <p class="text-base text-gray-700 ">Get help</p>
+                        <p class="text-base text-gray-700">Get help</p>
                     </div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa-regular fa-file-lines mr-1"></i>
                         <p class="text-base text-gray-700 ">Legal</p>
                     </div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa-solid fa-shield mr-1"></i>
-                        <p class="text-base text-gray-700 ">Insurance & Protection</p>
+                        <p class="text-base text-gray-700">Insurance & Protection</p>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <i class="text-xl fa-solid fa-car mr-1"></i>
-                        <p class="text-base text-gray-700 ">Host hub</p>
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
+                        <i class="text-xl fa-solid fa-screwdriver-wrench mr-1"></i>
+                        <p class="text-base text-gray-700">Host hub</p>
                     </div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200">
                         <i class="text-xl fa-solid fa-calculator mr-1"></i>
-                        <p class="text-base text-gray-700 ">Calculator</p>
+                        <p class="text-base text-gray-700">Calculator</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="w-screen relative lg:pr-8 lg:pl-9 lg:mx-auto lg:w-252 lg:mt-8">
-        <section class="w-full flex items-end justify-center fixed bottom-0 left-0 right-0 z-1000 py-3 pl-1
+        <section class="w-full flex items-end justify-center fixed bottom-0 left-0 right-0 z-999 py-3 pl-1
           bg-linear-to-t from-white via-white/95 to-white/80 cursor-default lg:hidden">
             <div class="w-[98%] py-5 px-4 mt-5 flex justify-between bg-white rounded-xl border border-[#d2d2d4]
             border-b-0 shadow-xl">
@@ -109,13 +112,13 @@
                     <p>All-Star Host</p>
                 </div>
                 <div class="flex items-center flex-wrap gap-2 mt-5">
-                    <p class="flex items-center pl-1.5 pr-3 border border-[#504d4d] text-[#121214] text-xs font-medium rounded-xl">
+                    <p class="flex items-center pl-1.5 pr-3 border-2 border-gray-300 text-[#121214] text-xs font-medium rounded-xl">
                         <img class="mr-1 size-8" src="images/CarSeat.jpg"> 5 Seats</p>
-                    <p class="flex items-center px-3 border border-[#504d4d] text-[#121214] text-xs font-medium rounded-xl">
+                    <p class="flex items-center px-3 border-2 border-gray-300 text-[#121214] text-xs font-medium rounded-xl">
                         <img class="mr-2 size-8" src="images/Gas.jpg"> Gas (Premium)</p>
-                    <p class="flex items-center px-3 border border-[#504d4d] text-[#121214] text-xs font-medium rounded-xl">
+                    <p class="flex items-center px-3 border-2 border-gray-300 text-[#4b4b4f] text-xs font-medium rounded-xl">
                         <img class="mr-3 size-8" src="images/GasCan.jpg"> 16 MPG</p>
-                    <p class="flex items-center px-3  border border-[#504d4d] text-[#121214] text-xs font-medium rounded-xl">
+                    <p class="flex items-center px-3  border-2 border-gray-300 text-[#121214] text-xs font-medium rounded-xl">
                         <img class="mr-3 size-8" src="images/Auto-Transmission1.jpg"> Automatic transmission</p>    
                 </div>
                 <div class="hidden w-full mt-4 text-[#121214] bg-[#dcf7ea] rounded-xl
